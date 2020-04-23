@@ -77,6 +77,15 @@ gulp.task('html:watch', function () {
   gulp.watch('source/**/*.html', ['html:build']);
 });
 
+/* gulp.task('js:build', function () {
+  return gulp.src('source/js/app.js') //Найдем наш main файл
+      .pipe(rigger()) //Прогоним через rigger
+      //.pipe(sourcemaps.init()) //Инициализируем sourcemap
+      //.pipe(sourcemaps.write()) //Пропишем карты
+      .pipe(gulp.dest('build/js')) //Выплюнем готовый файл в build
+      .pipe(browserSync.stream()); //И перезагрузим сервер
+}); */
+
 
 
 gulp.task("symbols", function() {
