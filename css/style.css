@@ -1021,7 +1021,8 @@ p {
     max-width: 213px;
     margin: 0 auto;
     margin-top: 10px; }
-    .promo1__picture img {
+    .promo1__picture img,
+    .promo1__picture svg {
       display: block; }
 
 @media (max-width: 768px) {
@@ -1289,6 +1290,8 @@ p {
     margin-bottom: 63px;
     cursor: pointer;
     transition: 0.2s ease; }
+    .team__user img {
+      transform: scale(1.02); }
     .team__user:nth-child(4n + 4) {
       margin-right: 0; }
     .team__user:hover .team__userpic img {
@@ -1569,7 +1572,7 @@ p {
     flex-shrink: 0;
     margin-right: 35px; }
     .speaker-modal__user:hover .team__userpic img {
-      transform: none; }
+      transform: scale(1.02); }
     .speaker-modal__user:active {
       transform: none;
       opacity: 1; }
@@ -1863,7 +1866,8 @@ p {
     display: flex;
     justify-content: flex-end;
     margin-top: 105px; }
-    .contact__decoration img {
+    .contact__decoration img,
+    .contact__decoration svg {
       width: 100%;
       max-width: 107px;
       display: block;
@@ -2073,7 +2077,8 @@ p {
     max-width: 190px;
     width: 25%;
     display: flex; }
-    .about-decoration__img img {
+    .about-decoration__img img,
+    .about-decoration__img svg {
       display: block;
       margin-top: auto;
       max-width: 98px;
