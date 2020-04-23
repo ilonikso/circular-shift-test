@@ -1,12 +1,14 @@
 .promo1 {
     margin-top: 160px;
+    background-color: $br-white;
 
     &__wrapper {
         display: flex;
-        background-color: #fff;
+        background-color: $br-white;
 
         &::before {
-            max-width: 92%;
+            max-width: 105%;
+            left: 48%;
             top: 85%;
             background-color: rgba(63, 63, 63, 0.33);
         }
