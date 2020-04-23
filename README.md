@@ -1,4 +1,4 @@
-# Circular Shifr
+# Circular Shift website
 
 ## Static pages
 
