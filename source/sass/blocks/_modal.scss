@@ -40,6 +40,8 @@
     background-color: #fff;
     transition: 0.3s all;
     overflow-y: auto;
+    //max-width: calc(100vh - 40px);
+    //overflow-y: auto;
 }
 
 .modal.active {
