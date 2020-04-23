@@ -31,6 +31,10 @@
     &__link {
         margin-top: 6px;
         margin-left: 11px;
+
+        &:nth-child(3){
+            margin-left: 0;
+        }
     }
 
     &__picture {
