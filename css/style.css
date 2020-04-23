@@ -1017,6 +1017,8 @@ p {
   .promo1__link {
     margin-top: 6px;
     margin-left: 11px; }
+    .promo1__link:nth-child(1) {
+      margin-left: 0; }
   .promo1__picture {
     max-width: 213px;
     margin: 0 auto;
