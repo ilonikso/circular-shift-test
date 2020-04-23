@@ -1,0 +1,129 @@
+.about-cover {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &--left {
+        .about-cover__picture {
+            border-top-right-radius: 60px;
+        }
+    }
+
+    &--right {
+        .about-cover__picture {
+            border-top-left-radius: 60px;
+        }
+
+        .about-cover__header {
+            margin-top: 80px;
+        }
+
+        .about-cover__wrapper {
+            justify-content: flex-end;
+        }
+
+        .about-cover__block {
+            max-width: 445px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__picture {
+        min-height: 475px;
+        width: 47%;
+        flex-shrink: 0;
+        align-self: flex-start;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__block {
+        padding: 60px;
+        max-width: 550px;
+        background-color: $br-white;
+    }
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        line-height: 1.33;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-cover {
+        &--right {
+            .about-cover__header {
+                margin-top: inherit;
+            }
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__picture {
+            width: 70%;
+            order: 1;
+            min-height: 300px;
+        }
+
+        &__block {
+            width: 70%;
+            order: 2;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .about-cover {
+        &__picture {
+            width: 70%;
+            min-height: 200px;
+        }
+
+        &__block {
+            margin-top: 40px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .about-cover {
+        &__picture {
+            width: 75%;
+            min-height: 200px;
+        }
+
+        &__block {
+            margin-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .about-cover {
+        &__picture {
+            width: 85%;
+            min-height: 180px;
+        }
+    }
+}

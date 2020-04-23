@@ -1,0 +1,111 @@
+.about-picture {
+    position: relative;
+    min-height: 400px;
+    padding-top: 105px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &--last {
+        margin-bottom: 70px;
+    }
+
+    &__banner {
+        min-height: 390px;
+        width: 50%;
+        max-width: 680px;
+        position: absolute;
+        opacity: 0.6;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__block {
+        padding: 45px;
+        padding-left: 72px;
+        padding-right: 72px;
+        padding-bottom: 55px;
+        max-width: 760px;
+        background-color: $br-white;
+        box-sizing: border-box;
+
+        &::before {
+            top: 55%;
+            left: 52%;
+            max-width: 1200px;
+            min-height: 105%;
+            width: 100%;
+        }
+    }
+
+    &__header {
+        margin-bottom: 16px;
+        max-width: 600px;
+    }
+
+    &__text {
+        max-width: 600px;
+        line-height: 1.33;
+    }
+
+    &--left {
+        .about-picture__banner {
+            border-top-right-radius: 60px;
+            left: 0;
+            top: 0;
+        }
+
+        .about-picture__wrapper {
+            justify-content: flex-end;
+        }
+    }
+
+    &--right {
+        .about-picture__banner {
+            border-top-left-radius: 60px;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about-picture {
+        padding-top: 130px;
+        min-height: initial;
+        margin-bottom: 60px;
+
+        &__banner {
+            min-height: 180px;
+            width: 60%;
+        }
+
+        &__block {
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 26px;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .about-picture {
+        &__banner {
+            min-height: 180px;
+            width: 70%;
+        }
+
+        &__block {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0px;
+            padding-bottom: 6px;
+        }
+    }
+}

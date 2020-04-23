@@ -1,0 +1,48 @@
+.about-text {
+    background-image: url("../img/vector/about-page-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 108px;
+    padding-bottom: 110px;
+    margin-top: 120px;
+    margin-bottom: 115px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        width: 48%;
+        line-height: 1.33;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        padding-top: 47px;
+        padding-bottom: 60px;
+        margin-top: 60px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 525px) {
+    .about-text {
+        padding-top: 17px;
+        padding-bottom: 30px;
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__text {
+            width: 100%;
+        }
+    }
+}

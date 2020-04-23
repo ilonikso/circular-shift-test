@@ -1,0 +1,35 @@
+.link {
+    display: inline-block;
+    color: &br-mint;
+    font-family: "f-d";
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    padding-right: 20px;
+    color: $br-mint;
+    transition: $anim;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.6;
+        transform: scale(0.95);
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 52%;
+        transform: translate(0, -50%) rotate(180deg);
+        width: 12px;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-image: url("../img/raster/back-icon.png");
+        background-size: cover;
+        background-position: center;
+    }
+}

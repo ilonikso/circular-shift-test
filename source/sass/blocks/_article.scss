@@ -1,0 +1,138 @@
+.article {
+    margin-top: 65px;
+    margin-bottom: 85px;
+    color: $tx-d-grey;
+
+    &__wrapper {
+        max-width: 730px;
+    }
+
+    &__header {
+        font-size: 45px;
+        line-height: 1.09;
+        font-family: "g-eb";
+        margin-bottom: 12px;
+    }
+
+    &__sub-header {
+        font-size: 22px;
+        line-height: 1.18;
+        font-family: "g-eb";
+        margin-bottom: -5px;
+    }
+
+    &__publication {
+        text-transform: uppercase;
+        color: rgba($tx-d-grey, 0.5);
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    &__picture {
+        margin-bottom: 36px;
+        margin-bottom: 2.25em;
+        margin-top: 24px;
+
+        &--mt {
+            margin-top: 42px;
+        }
+    }
+
+    &__picture-item {
+        position: relative;
+        min-height: 350px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            max-width: initial;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__picture-caption {
+        color: rgba($tx-black, 0.5);
+        font-family: "f-bo";
+        display: block;
+        margin-top: 10px;
+
+        a {
+            color: inherit;
+            transition: $anim;
+
+            &:hover {
+                color: $br-mint;
+                opacity: 0.8;
+            }
+
+            &:active {
+                opacity: 0.6;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+        margin-bottom: 24px;
+        margin-bottom: 1.5em;
+
+        &--bold {
+            font-family: "f-d";
+        }
+    }
+
+    &__link {
+        color: $br-d-mint;
+        transition: $anim;
+        display: inline-block;
+
+        &:hover {
+            color: $br-mint;
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+            transform: scale(0.95);
+        }
+    }
+
+    &__list {
+        padding-left: 20px;
+        margin-bottom: 24px;
+
+        li {
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .article {
+        margin-bottom: 40px;
+
+        &__picture-item {
+            min-height: 200px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .article {
+        margin-bottom: 40px;
+
+        &__picture-item {
+            min-height: 170px;
+        }
+    }
+}

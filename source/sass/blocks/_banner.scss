@@ -1,0 +1,42 @@
+.banner {
+    margin-top: 130px;
+
+    &__header {
+        margin-bottom: 42px;
+    }
+
+    &__img {
+        min-height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        margin-top: 80px;
+
+        &__header {
+            margin-bottom: 30px;
+        }
+
+        &__img {
+            min-height: 250px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .banner {
+        margin-top: 75px;
+
+        &__header {
+            margin-bottom: 25px;
+        }
+
+        &__img {
+            min-height: 220px;
+        }
+    }
+}

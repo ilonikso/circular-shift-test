@@ -1,0 +1,151 @@
+.team {
+    margin-top: 57px;
+
+    &__header {
+        margin-bottom: 15px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+
+    &__user {
+        max-width: 200px;
+        margin-right: calc((100% - 200px * 4) / 3);
+        margin-bottom: 63px;
+        cursor: pointer;
+        transition: $anim;
+
+        &:nth-child(4n + 4) {
+            margin-right: 0;
+        }
+
+        &:hover{
+            .team__userpic{
+                
+                img{
+                    transition: $anim;
+                    transform: scale(1.1);
+                }
+            }
+
+            .team__name, 
+            .team__position{
+                opacity: 0.8;
+                transition: $anim;
+            }
+        }
+
+        &:active{
+            transform: scale(0.98);
+            opacity: 0.8;
+        }
+    }
+
+    &__userpic {
+        border-radius: 50%;
+        max-height: 200px;
+        position: relative;
+        background-color: transparent;
+        overflow: hidden;
+        left: -1px;
+        box-shadow: 3px 3px 0px rgba($br-mint, 1);
+    }
+
+    &__name {
+        display: block;
+        text-align: center;
+        font-family: "f-d";
+        color: $tx-black;
+        margin-top: 18px;
+    }
+
+    &__position {
+        display: block;
+        text-align: center;
+    }
+}
+
+.team--home-page {
+    padding-bottom: 38px;
+}
+
+.team--speakers-page {
+    margin-top: 90px;
+    padding-bottom: 35px;
+
+    .team__user {
+        margin-bottom: 62px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .team {
+        &__wrapper {
+            justify-content: space-around;
+        }
+
+        &__user {
+            margin-right: 0;
+            margin-right: 10px;
+            margin-left: 10px;
+
+            &:nth-child(4n + 4) {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        &__wrapper {
+            margin-top: 40px;
+        }
+
+        &__user {
+            max-width: 150px;
+            margin-bottom: 30px;
+        }
+
+        &__userpic {
+            max-height: 150px;
+        }
+    }
+
+    .team--speakers-page {
+        margin-top: 60px;
+
+        .team__user {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .team {
+        &__wrapper {
+            margin-top: 30px;
+        }
+
+        &__user {
+            max-width: 120px;
+            margin-bottom: 20px;
+        }
+
+        &__userpic {
+            max-height: 120px;
+        }
+    }
+
+    .team--speakers-page {
+        margin-top: 60px;
+
+        .team__user {
+            margin-bottom: 20px;
+        }
+    }
+}
