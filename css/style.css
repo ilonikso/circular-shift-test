@@ -447,7 +447,6 @@ p {
   line-height: 1.31; }
 
 .wrapper {
-  outline: 1px dashed grey;
   max-width: 920px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1597,10 +1596,13 @@ p {
       height: 18px; }
 
 @media (max-width: 768px) {
-  .speaker-modal__wrapper {
-    padding: 20px;
-    display: flex;
-    padding-bottom: 10px; } }
+  .speaker-modal {
+    max-height: calc(100vh - 40px);
+    overflow-y: auto; }
+    .speaker-modal__wrapper {
+      padding: 20px;
+      display: flex;
+      padding-bottom: 10px; } }
 
 @media (max-width: 525px) {
   .speaker-modal__wrapper {
