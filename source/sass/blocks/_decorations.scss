@@ -34,31 +34,31 @@
 
     &--mic {
         &::before {
-            background-image: url("/img/vector/mic-icon.svg");
+            background-image: url("../img/vector/mic-icon.svg");
         }
     }
 
     &--user {
         &::before {
-            background-image: url("/img/vector/user-icon.svg");
+            background-image: url("../img/vector/user-icon.svg");
         }
     }
 
     &--location {
         &::before {
-            background-image: url("/img/vector/location-icon.svg");
+            background-image: url("../img/vector/location-icon.svg");
         }
     }
 
     &--calendar {
         &::before {
-            background-image: url("/img/vector/calendar-icon.svg");
+            background-image: url("../img/vector/calendar-icon.svg");
         }
     }
 
     &--ticket {
         &::before {
-            background-image: url("/img/vector/ticket-icon.svg");
+            background-image: url("../img/vector/ticket-icon.svg");
         }
     }
 }
