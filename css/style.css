@@ -555,15 +555,15 @@ p {
     background-repeat: no-repeat;
     background-position: bottom center; }
   .header-decorated--mic::before {
-    background-image: url("/img/vector/mic-icon.svg"); }
+    background-image: url("../img/vector/mic-icon.svg"); }
   .header-decorated--user::before {
-    background-image: url("/img/vector/user-icon.svg"); }
+    background-image: url("../img/vector/user-icon.svg"); }
   .header-decorated--location::before {
-    background-image: url("/img/vector/location-icon.svg"); }
+    background-image: url("../img/vector/location-icon.svg"); }
   .header-decorated--calendar::before {
-    background-image: url("/img/vector/calendar-icon.svg"); }
+    background-image: url("../img/vector/calendar-icon.svg"); }
   .header-decorated--ticket::before {
-    background-image: url("/img/vector/ticket-icon.svg"); }
+    background-image: url("../img/vector/ticket-icon.svg"); }
 
 .blur-shadow {
   position: relative; }
