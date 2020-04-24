@@ -4,6 +4,8 @@
     padding-top: 105px;
     max-width: 1440px;
     margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     &--last {
         margin-bottom: 70px;
@@ -14,7 +16,7 @@
         width: 50%;
         max-width: 680px;
         position: absolute;
-        opacity: 0.6;
+        //opacity: 0.6;
         z-index: -1;
         background-repeat: no-repeat;
         background-position: center;
@@ -104,7 +106,7 @@
         &__block {
             padding-left: 20px;
             padding-right: 20px;
-            padding-top: 0px;
+            padding-top: 1px;
             padding-bottom: 6px;
         }
     }

@@ -16,9 +16,29 @@
         max-width: 348px;
         margin-right: calc((100% - 348px * 3) / 2);
         margin-bottom: 50px;
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        transition: $anim;
 
         &:nth-child(3n + 3) {
             margin-right: 0;
+        }
+
+        &:hover{
+            opacity: 0.8;
+
+            .articles__link{
+                color: $br-mint;
+
+                &::before{
+                    background-image: url("../img/raster/back-icon.png");
+                }
+            }
+        }
+
+        &:active{
+            transform: scale(0.97);
         }
     }
 
