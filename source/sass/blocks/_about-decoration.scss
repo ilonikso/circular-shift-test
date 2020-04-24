@@ -1,6 +1,12 @@
 .about-decoration {
     margin-top: 70px;
     margin-bottom: 125px;
+    background-color: $br-white;
+
+    &::before{
+        width: 90%;
+        max-width: 1100px;
+    }
 
     &--block-2 {
         margin-top: 98px;
@@ -10,6 +16,8 @@
     &__wrapper {
         display: flex;
         background-color: $br-white;
+
+       
     }
 
     &__img {
@@ -18,7 +26,8 @@
         width: 25%;
         display: flex;
 
-        img {
+        img,
+        svg {
             display: block;
             margin-top: auto;
             max-width: 98px;

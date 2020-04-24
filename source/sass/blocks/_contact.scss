@@ -21,7 +21,8 @@
         justify-content: flex-end;
         margin-top: 105px;
 
-        img {
+        img,
+        svg {
             width: 100%;
             max-width: 107px;
             display: block;
@@ -40,7 +41,8 @@
         }
 
         &__decoration {
-            img {
+            img,
+            svg {
                 max-width: 70px;
             }
         }
@@ -56,7 +58,8 @@
         &__decoration {
             width: 20%;
 
-            img {
+            img,
+            svg {
                 margin-right: 0;
             }
         }
@@ -66,7 +69,8 @@
 @media (max-width: 425px) {
     .contact {
         &__decoration {
-            img {
+            img,
+            svg {
                 max-width: 55px;
             }
         }
@@ -76,7 +80,8 @@
 @media (max-width: 375px) {
     .contact {
         &__decoration {
-            img {
+            img,
+            svg {
                 max-width: 47px;
             }
         }
@@ -90,7 +95,8 @@
         }
 
         &__decoration {
-            img {
+            img,
+            svg {
                 max-width: 42px;
             }
         }

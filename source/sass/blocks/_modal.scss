@@ -45,8 +45,24 @@
 }
 
 .modal.active {
+    //animation: modalOpen .4s ease;
     opacity: 1;
     visibility: visible;
+
+
+    @keyframes modalOpen {
+        from{
+            transform: translate(-60%, -60%);
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        to{
+            transform: translate(-50%, -50%);
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }
 
 .modal__cross {

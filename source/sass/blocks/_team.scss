@@ -18,6 +18,10 @@
         cursor: pointer;
         transition: $anim;
 
+        img{
+            transform: scale(1.02);
+        }
+
         &:nth-child(4n + 4) {
             margin-right: 0;
         }

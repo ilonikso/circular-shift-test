@@ -1,6 +1,9 @@
 .about-cover {
     max-width: 1440px;
     margin: 0 auto;
+    background-color: $br-white;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     &--left {
         .about-cover__picture {
